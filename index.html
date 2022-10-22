@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jack En Poy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <img src="img/background.png" alt="" class="logo">
+
+
+    <div style="position: relative; width: 100%; height: 50px;">
+        <div style="position: absolute; width: 100%; height: 12px; background-color: #111827; bottom: 0;"></div>
+        
+        <div style="position: absolute; width: 150px; height: 50px; background-color: rgb(255, 255, 255);
+        left: 50%; transform: translateX(-50%);"><h1 class="score-h"><span id="lcount">0</span> - <span id="wcount">0</span></h1>
+        </div>
+    </div>
+
+
+
+    <div style="max-width: 900px; margin:auto; display: block;">
+        <div class="left-div">
+            <h2 class="ph">(KALABAN)</h2>
+        </div>
+        <div class="right-div">
+            <h2 class="ph">(IKAW)</h2>
+        </div>
+    </div>
+
+
+
+    <div style="max-width: 900px; margin:auto; height: auto; display: block;">
+        <div class="left-div">
+            <img src="https://i.postimg.cc/xT4jtNpB/gpic.png" alt="" class="picture" id="cpic">
+            <h6 class="select" id="cvalue">PUMILI</h6>
+        </div>
+        <div class="right-div">
+            <img src="https://i.postimg.cc/xT4jtNpB/gpic.png" alt="" class="picture" id="ypic">
+            <h6 class="select" id="yvalue">Choice</h6>
+        </div>
+    </div>
+
+
+
+    <div>
+            <select name="" id="yoption" class="pselect" onchange="picChange()">
+                <option value="Bato">Bato</option>
+                <option value="Papel">Papel</option>
+                <option value="Gunting">Gunting</option>
+            </select>
+        <button class="play-button" onclick="gameFunction()" id="plybtn">JAK EN POY</button>
+    </div>
+
+
+
+    <div id="wbox"><h1 style="margin: 10px 0 0 0;">Win</h1></div>
+    <div id="lbox"><h1 style="margin: 10px 0 0 0;">Lose</h1></div>
+    <div id="dbox"><h1 style="margin: 10px 0 0 0;">Draw</h1></div>
+
+
+
+
+    
+
+    <div id="win" class="result">
+        <h3>NAKS PANALO </h3>
+        <div>
+            <h1><span id="llcount"></span> - <span id="wwcount"></span></h1>
+        </div>
+        <button id="plyagn" onclick="reFresh()">Play Again</button>
+    </div>
+    <div id="lose" class="result">
+        <h3> TALO BELAT </h3>
+        <div>
+            <h1><span id="lllcount"></span> - <span id="wwwcount"></span></h1>
+        </div>
+        <button id="plyagn" onclick="reFresh()">Play Again</button>
+    </div>
+    <div id="draw" class="result">
+        <h3> Draw </h3>
+        <div>
+            <h1><span id="llllcount"></span> - <span id="wwwwcount"></span></h1>
+        </div>
+        <button id="plyagn" onclick="reFresh()">Play Again</button>
+    </div>
+    
+
+
+
+    <h1 style="position: absolute; bottom: 0; color: black; font-family:'Courier New', Courier, monospace; letter-spacing: 0;
+    left: 50%; transform: translate(-50%); font-size: 15px;">WD20P:<span style="font-size: 15px;"></span>VICTOR AUSTRIA</h1>
+    
+
+
+
+
+
+
+    <script src="jnp.js"></script>
+
+
+        
+   
+
+
+
+
+</body>
+</html>
